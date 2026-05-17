@@ -1,97 +1,126 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Mutqan — مُتقَن
 
-# Getting Started
+[🇫🇷 Français](#-français) | [🇬🇧 English](#-english)
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🇫🇷 Français
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+> **"Des services parfaitement exécutés, à portée de main"**
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square&color=1A3A5C)
+![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS-gold?style=flat-square&color=C9A84C)
+![React Native](https://img.shields.io/badge/React%20Native-CLI-blue?style=flat-square&color=1A3A5C)
 
-```sh
-# Using npm
-npm start
+### 📖 À propos
 
-# OR using Yarn
-yarn start
-```
+**Mutqan** est une plateforme mobile premium qui connecte les particuliers avec des professionnels qualifiés pour tous types de services — de manière rapide, fiable et sécurisée.
 
-## Step 2: Build and run your app
+Conçu spécialement pour le marché marocain, Mutqan offre une expérience **native**, avec une messagerie en temps réel, des demandes de devis et un écosystème de professionnels vérifiés.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### 🎯 Fonctionnalités clés
 
-### Android
+- **Recherche & Découverte** : Recherche par mots-clés, filtres par ville/catégorie/note, et géolocalisation.
+- **Profils Pro Vérifiés** : Badges de vérification, portfolios, notes et avis.
+- **Demandes de Devis** : Formulaires, téléchargement de photos, et suivi d'état.
+- **Messagerie** : Chat en temps réel entre le client et le professionnel.
+- **Tableau de bord Pro** : Gestion des demandes, statistiques et visibilité du profil.
+- **Favoris** : Sauvegarde des pros pour les retrouver facilement.
+- **Notifications** : Notifications push et in-app.
 
-```sh
-# Using npm
+### 🛠️ Technologies
+
+- **Frontend Mobile** : React Native CLI, React Navigation v7, Zustand, React Native Reanimated.
+- **Backend (Prévu)** : Node.js, PostgreSQL, Socket.io.
+
+### 🚀 Démarrage
+
+#### Prérequis
+- Node.js >= 18
+- JDK 17
+- Android Studio / Xcode
+- React Native CLI
+
+#### Installation
+
+```bash
+# Cloner le dépôt
+git clone https://github.com/votre-orga/mutqan.git
+cd mutqan
+
+# Installer les dépendances
+npm install
+
+# Lancer sur Android
+adb reverse tcp:8081 tcp:8081
 npm run android
 
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+# Lancer sur iOS
+cd ios && pod install && cd ..
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## 🇬🇧 English
 
-## Step 3: Modify your app
+> **"Perfectly crafted services, at your fingertips"**
 
-Now that you have successfully run the app, let's make changes!
+![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square&color=1A3A5C)
+![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS-gold?style=flat-square&color=C9A84C)
+![React Native](https://img.shields.io/badge/React%20Native-CLI-blue?style=flat-square&color=1A3A5C)
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+### 📖 About
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+**Mutqan** is a premium mobile platform that connects individuals with qualified professionals for any service need — quickly, reliably, and securely.
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+Tailored for the Moroccan market, Mutqan offers a **native** experience featuring real-time messaging, quote requests, and an ecosystem of fully verified professionals.
 
-## Congratulations! :tada:
+### 🎯 Key Features
 
-You've successfully run and modified your React Native App. :partying_face:
+- **Search & Discovery**: Keyword search, filters by city/category/rating, and geolocation.
+- **Verified Pro Profiles**: Verification badges, portfolios, ratings, and reviews.
+- **Quote Requests**: Form submission, photo uploads, and status tracking.
+- **Messaging**: Real-time chat between clients and professionals.
+- **Pro Dashboard**: Manage requests, view statistics, and adjust profile visibility.
+- **Favorites**: Save pros to re-engage with them easily.
+- **Notifications**: Push and in-app notifications.
 
-### Now what?
+### 🛠️ Tech Stack
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+- **Mobile Frontend**: React Native CLI, React Navigation v7, Zustand, React Native Reanimated.
+- **Backend (Planned)**: Node.js, PostgreSQL, Socket.io.
 
-# Troubleshooting
+### 🚀 Getting Started
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+#### Prerequisites
+- Node.js >= 18
+- JDK 17
+- Android Studio / Xcode
+- React Native CLI
 
-# Learn More
+#### Installation
 
-To learn more about React Native, take a look at the following resources:
+```bash
+# Clone the repository
+git clone https://github.com/your-org/mutqan.git
+cd mutqan
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+# Install dependencies
+npm install
+
+# Run on Android
+adb reverse tcp:8081 tcp:8081
+npm run android
+
+# Run on iOS
+cd ios && pod install && cd ..
+npm run ios
+```
+
+---
+
+<div align="center">
+  <strong>Mutqan — مُتقَن</strong><br/>
+  <em>Excellence. Delivered. / L'excellence. Délivrée.</em>
+</div>
